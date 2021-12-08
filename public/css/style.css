@@ -1,0 +1,201 @@
+body {
+    font-family: fantasy;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(225, 180, 255, 0.822);
+  }
+  
+  li {
+    float: right;
+    font-family: fantasy;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(223, 221, 221);
+  }
+
+  /* the story */
+  h2{
+    text-align: center;
+    color:rgb(0, 0, 0)
+  }
+
+  p.dotted {
+    border-style: dotted;
+    background-color:rgb(233, 199, 255);
+    text-align: center;
+    border-color: #ffffff;
+  }
+  
+  .column {
+    float: right;
+    width: 50%;
+    padding: 15px;
+    font-size:x-large;
+  }
+  
+  /* the wheel */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+main { 
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #f8f6e1;
+    background-size: cover;
+}
+.main {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.wheel {
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 4s;
+    /* background: url('arrow1.png') no-repeat; */
+
+}
+span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+.span1 {
+   clip-path: polygon(0 92%, 100% 50%, 0 8%);
+   background-color: #eec97f;
+   top: 120px;
+   left: 0;
+}
+.span2 {
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #e9a2f0; 
+    top: 120px;
+    right: 0;
+ }
+ .span3 {
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #7feeaa;
+    bottom: 0;
+    left: 120px;
+ }
+ .span4 {
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #e5f589;
+    top: 0;
+    left: 120px;
+ }
+.span5 {
+    clip-path: polygon(0 40%, 100% 0%, 60% 100%);
+    background-color: #e9a2f0; 
+    bottom: -2px; 
+    right: 242px;
+ }
+.span6 {
+    clip-path: polygon(40% 100%, 0 0%, 100% 40%);
+    background-color: #e5f589;
+    bottom: -2px;
+    left: 242px;
+ }
+ .span7 {
+    clip-path: polygon(60% 0, 100% 100%, 0 60%); 
+    background-color: #7feeaa;
+    top: -2px;
+    right: 242px; 
+ }
+ .span8 {
+    clip-path: polygon(0 100%, 100% 60%, 40% 0);
+    background-color: #eec97f;
+    top: -2px;
+    left: 242px;
+ } 
+ span p{
+     width: 65px;
+     height: 65px;
+     font-size: 20px;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }  
+ .spin {
+     position: absolute;
+     top: 43%;
+     left: 43%;
+     width: 75px;
+     height: 75px;
+     border-radius: 50%;
+     border: 2px solid #fff;
+     background-color: rgb(219, 217, 217);
+     color: #fff;
+     box-shadow: 0 5px 20px rgb(214, 212, 212);
+     font-weight: bold;
+     font-size: 22px;
+     cursor: pointer;
+     animation: pulse 2s infinite;
+ }
+@keyframes pulse {
+    0% {
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    transform: scale3d(1.09, 1.09, 1.09);
+    }
+    100% {
+    transform: scale3d(1, 1, 1);
+    }
+  } 
+ .spin:active {
+     width: 70px;
+     height: 70px;
+     font-size: 20px;
+     background: #fffffe;
+
+ } 
+
+ h2.background {
+    text-align: center;
+
+  }
+  p.solid {
+    border-style: solid;
+    background-color:rgb(233, 199, 255);
+    text-align: center;
+    border-color: #ffffff;
+  }
+
+ footer {
+    text-align: center;
+    font-size: medium;
+  }

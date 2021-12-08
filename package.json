@@ -1,0 +1,22 @@
+{
+  "name": "phase2",
+  "version": "1.0.0",
+  "description": "phase 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "phase",
+    "2"
+  ],
+  "author": "humayra ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
