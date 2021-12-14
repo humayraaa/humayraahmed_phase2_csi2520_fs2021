@@ -195,6 +195,10 @@ span {
 
  } 
 
+ .main.animate:after{
+  animation: animateArrow 0.7s ease infinite;
+}
+
  h2.background {
     text-align: center;
 
